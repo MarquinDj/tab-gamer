@@ -1,8 +1,8 @@
 function Home() {
-    return (<h1> 
-        Opa 👋 !!!!
+    return (<div> 
+        <h1>Opa 👋 !!!!</h1>
         <img src="/happy-back-to-school.gif" alt="Ralph" />
-        </h1>
+        </div>
         )
 }
 
