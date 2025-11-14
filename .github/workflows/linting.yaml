@@ -15,4 +15,4 @@ jobs:
 
       - run: npm ci
 
-      - run: npm run lin:prettiert:check
+      - run: npm run lint:prettiert:check
