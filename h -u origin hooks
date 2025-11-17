@@ -1,0 +1,305 @@
+[33mcommit ebf871357208368c57ad9d96ea674a73af2183ac[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mhooks[m[33m)[m
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Sun Nov 16 22:58:53 2025 +0000
+
+    ci: add `Commitizen` and `commit` npm script
+
+[33mcommit acaed619710e80d7e920dc93da2b8120a06c7e6a[m
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Sun Nov 16 22:52:06 2025 +0000
+
+    ci: add `Husky` and `commit-msg` hook
+
+[33mcommit bbf4b4b273a6be61b6396ef8a49f3a49eed4ad78[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Merge: 38b1664 528cc29
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Sun Nov 16 19:23:11 2025 -0300
+
+    Merge pull request #18 from MarquinDj/lint-commits
+    
+    add `committ` linting
+
+[33mcommit 528cc29bfd9462274c8fa84ef506beabe4e39e7f[m[33m ([m[1;31morigin/lint-commits[m[33m)[m
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Sun Nov 16 22:10:17 2025 +0000
+
+    ci: add `commitlint` job in `linting` GitHub Action
+
+[33mcommit 33d5341290f3e66b80dc98b70b43c83c228f1aa4[m
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Sun Nov 16 21:30:34 2025 +0000
+
+    ci: add `commitlint` with `Conventional Commits` config
+
+[33mcommit 38b166493b390f8e2e5c49ba8b349adb4693fb11[m
+Merge: 4834367 4b11b7c
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Fri Nov 14 21:03:29 2025 -0300
+
+    Merge pull request #17 from MarquinDj/lint-quality-actions
+    
+    Adds `lint:eslint:check` + `eslint` job in `Linting` GitHub Action
+
+[33mcommit 4b11b7c8f0f27d1b20554808f86ecaa790fd6629[m[33m ([m[1;31morigin/lint-quality-actions[m[33m)[m
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Sat Nov 15 00:02:21 2025 +0000
+
+    fix `eslint` linting
+
+[33mcommit 196de95231221bb2d49bab8d9d006a0ccdc38424[m
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Fri Nov 14 23:49:29 2025 +0000
+
+    adds `eslint` job in `Linting` GitHub Action
+
+[33mcommit 01013164b652fa6d266b91517a1e52d9d89462a6[m
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Fri Nov 14 23:47:02 2025 +0000
+
+    adds `lint:eslint:check` script with `ESLint`
+
+[33mcommit 48343671cf1585cb94030bf214f747a20665fbd9[m
+Merge: 463fb82 91c26a3
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Fri Nov 14 20:11:12 2025 -0300
+
+    Merge pull request #16 from MarquinDj/lint-format-action
+    
+    adds `linting` github actions
+
+[33mcommit 91c26a3aeeee120ed24232cc82b088536fd67f27[m[33m ([m[1;31morigin/lint-format-action[m[33m)[m
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Fri Nov 14 23:08:04 2025 +0000
+
+    fix `prettier` style linting
+
+[33mcommit e8e9a3c83b37a2f9bd67445456d44bd0ec5f8c73[m
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Fri Nov 14 22:53:09 2025 +0000
+
+    adds `linting` github actions
+
+[33mcommit 463fb823972d0a2759b6b41e5c0ed9b165befacb[m
+Merge: 47acf01 857363a
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Fri Nov 14 19:43:03 2025 -0300
+
+    Merge pull request #15 from MarquinDj/actions
+    
+    adds `Automated Tests` GitHub Action
+
+[33mcommit 857363a6e450e6816ed2db7cbee05bebf7ab8b20[m[33m ([m[1;31morigin/actions[m[33m)[m
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Fri Nov 14 22:30:26 2025 +0000
+
+    adds `Automated Tests` GitHub Action
+
+[33mcommit 47acf019122ffcecc7d51ec579d6e59d80c44d7a[m
+Merge: cfeb127 529fdcd
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Thu Nov 13 19:44:06 2025 -0300
+
+    Merge pull request #14 from MarquinDj/fix-npm-test
+    
+    makes `npm test` more robust with `async-retry` and `orchestrator.js`
+
+[33mcommit 529fdcd8d39bcedebd6589677891af78af0d4db1[m[33m ([m[1;31morigin/fix-npm-test[m[33m)[m
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Wed Nov 12 22:46:04 2025 +0000
+
+    makes `npm test` more robust with `async-retry` and `orchestrator.js`
+
+[33mcommit cfeb127fa24b75fae000ce38767c19d06e34ed86[m
+Merge: b4d8948 bdbecc1
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Wed Nov 12 19:00:05 2025 -0300
+
+    Merge pull request #13 from MarquinDj/wait-for-postgres
+    
+    adds `wait-for-postgres.js` script
+
+[33mcommit bdbecc1a595ed334525d66ce9ea1c79ec665964b[m[33m ([m[1;31morigin/wait-for-postgres[m[33m)[m
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Wed Nov 12 21:57:26 2025 +0000
+
+    adds `wait-for-postgres.js` script
+
+[33mcommit b4d8948c8ac5c7178d3f9f28bd8a95359e1ae2ce[m[33m ([m[1;31morigin/fix-migrations-endpoint[m[33m)[m
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Sun Nov 9 18:29:56 2025 +0000
+
+    fiz `/migrations` endpoint connection bug
+
+[33mcommit a9ca7bc8159790a85d4b3cfca3baaa14364735d9[m
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Sun Nov 9 18:05:49 2025 +0000
+
+    fix migration ednpoint bug
+
+[33mcommit de70a9038e42ada467c97ba0304f1d6eec188cdf[m
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Sun Nov 9 17:25:33 2025 +0000
+
+    remove arquivo `cabelo.txt`
+
+[33mcommit 237dd129bd50265b4f9194443c06e0e0e3f9a2e6[m
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Sun Nov 9 17:06:41 2025 +0000
+
+    adiciona o arquivo cabelo.txt
+
+[33mcommit df933fd7882d5ebbb8b4920837b68781934cdd54[m
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Sat Nov 8 22:22:07 2025 +0000
+
+    fix ssl mode
+
+[33mcommit ef3951907aa0b2364cdc9a9f5cbdcfd2e34222db[m
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Sat Nov 8 22:16:49 2025 +0000
+
+    add `api/v1/migrations` endpoint
+
+[33mcommit e082adea4ac276ecd4b6569554600bdc02e8787a[m
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Wed Nov 5 22:34:36 2025 +0000
+
+    adiciona os scripts de migracao
+
+[33mcommit c6248a8d6782f5404ac0cc9743d7d72d6e20c14c[m
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Tue Nov 4 22:40:08 2025 +0000
+
+    adicionando o ssl para o `database.js`
+
+[33mcommit 60cbfd3f52090256bd8ead04ba4b1588c475a825[m
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Tue Nov 4 21:44:43 2025 +0000
+
+    adiciona mais robustez ao `database.js` e `client.connect()`
+
+[33mcommit f4e3141f28fd2ab69cc323a0eae3271a28fd6e3c[m
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Mon Nov 3 23:31:56 2025 +0000
+
+    finaliza o endpoint  `/api/v1/status`
+
+[33mcommit 2a45ee3836cca868a74edffdeb5637c0c88bd7cf[m
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Mon Nov 3 23:30:46 2025 +0000
+
+    faz o `database.js` mais robusto a erros
+
+[33mcommit 8b7c4c71a99e01e6b9d5d1e53d740ce7a5996e43[m
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Sun Nov 2 22:25:33 2025 +0000
+
+    adicionando os scripts dos services
+
+[33mcommit e5fdd254f0a938784cd1e2eadc7b5eb3a03c412b[m
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Sun Nov 2 22:14:25 2025 +0000
+
+    adicionado o `jsconfig.json`
+
+[33mcommit 0eb3a329eb8cefa9686452dd9fe14d20b3fe76e7[m
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Sun Nov 2 21:50:59 2025 +0000
+
+    move `.env` to `.env.development`
+
+[33mcommit 48d8ee8a0bd495cccb4309f9e8db1b3b9e167935[m
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Sun Nov 2 21:43:35 2025 +0000
+
+    adicionando o `.env` :O
+
+[33mcommit 80b4084567bf1340ec98fd0a2327f1a52e87cf51[m
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Sat Nov 1 22:59:30 2025 +0000
+
+    adiciona `database.js` no projeto
+
+[33mcommit 0972ac416b1bc7b1ba04c823f129e68e6b22d47d[m
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Fri Oct 31 23:03:23 2025 +0000
+
+    adiciona o  `compose` do docker com o database
+
+[33mcommit bf1475628ea996d18be9dd201f9584112e3b733f[m
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Thu Oct 30 22:16:00 2025 +0000
+
+    add `/api/v1/status` endpoint
+
+[33mcommit aaf79b9f34aa3385dfa12c62878f04b59aa8a130[m
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Wed Oct 29 22:20:34 2025 +0000
+
+    Instalando o `jest` como dependencia
+
+[33mcommit 9ec2404b38971ac0a3e02630414aab567565ef0f[m
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Fri Oct 24 18:36:28 2025 +0000
+
+    adiciona scripts `lint:check` e o `lint:fix`
+
+[33mcommit d3ffe66b6c85079663d9d981cace43fb3a2e6d71[m
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Fri Oct 24 18:20:03 2025 +0000
+
+    adiciona o `.editorconfig`
+
+[33mcommit 98bf4d783659bead82c0a7d999dbd4dabe28ca5c[m
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Tue Oct 21 23:37:33 2025 +0000
+
+    Adicionando quebra de linha
+
+[33mcommit ecbf7f2dab6b7810b21cc9aa82788f6dde30dae1[m
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Tue Oct 21 23:32:28 2025 +0000
+
+    esqueci do Ralph XD
+
+[33mcommit 98bb4cb5cb70236cb8ff26259fde5050f87cab8b[m
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Tue Oct 21 23:28:02 2025 +0000
+
+    deixando mais gamer
+
+[33mcommit 604f7e6cf0cd35314e4a0edb065a02ab274fc065[m
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Tue Oct 21 23:09:47 2025 +0000
+
+    deixando mais gamer
+
+[33mcommit b65e5480c11fd05d8b347900463e4a42121920ea[m
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Mon Oct 20 22:28:31 2025 +0000
+
+    adicionando a pasta pages
+
+[33mcommit 30f20d6db08fa1d586caac863eb70c7922016379[m
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Mon Oct 20 22:26:28 2025 +0000
+
+    adiciona os packages
+
+[33mcommit 16d3fa5f1300cf90d1e3894f631406a4c85e2c50[m
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Mon Oct 20 22:22:09 2025 +0000
+
+    Adiciona o .nvmrc
+
+[33mcommit c9976d922f3d7714e496b638ca3d2de5408edba9[m
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Mon Oct 20 02:13:27 2025 +0000
+
+    commit gamer
+
+[33mcommit 66852eae9071aa7e2753063b10c8d45901d9eb69[m
+Author: Marcus Santos <103291678+MarquinDj@users.noreply.github.com>
+Date:   Thu Oct 16 15:46:58 2025 -0300
+
+    Initial commit
