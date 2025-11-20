@@ -49,8 +49,10 @@ function DatabaseInfo() {
       </div>
     );
   } else {
-    <div>
-      <p>Carregando informações...</p>
-    </div>;
+    return (
+      <div>
+        <p>Carregando informações...</p>
+      </div>
+    );
   }
 }
