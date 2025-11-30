@@ -21,7 +21,7 @@ exports.up = (pgm) => {
     },
 
     // For reference https://www.npmjs.com/package/bcrypt#hash-info.
-    senha: {
+    password: {
       type: "varchar(60)",
       notNull: true,
     },
