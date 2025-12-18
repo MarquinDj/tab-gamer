@@ -1,3 +1,4 @@
+import activation from "models/activation";
 import orchestrator from "tests/orchestrator.js";
 
 beforeAll(async () => {
@@ -8,6 +9,7 @@ beforeAll(async () => {
 });
 
 describe("Use case: Registration Flow (all sucessful)", () => {
+  let createdUserResponseBody;
   test("Create user account", async () => {
     const response = await fetch("http://localhost:3000/api/v1/users", {
       method: "POST",
@@ -23,7 +25,7 @@ describe("Use case: Registration Flow (all sucessful)", () => {
 
     expect(response.status).toBe(201);
 
-    const createdUserResponseBody = await response.json();
+    createdUserResponseBody = await response.json();
 
     expect(createdUserResponseBody).toEqual({
       id: createdUserResponseBody.id,
@@ -37,42 +39,19 @@ describe("Use case: Registration Flow (all sucessful)", () => {
   });
 
   test("Receive activation email", async () => {
-    const response1 = await fetch("http://localhost:3000/api/v1/users", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        username: "emailduplicado1",
-        email: "duplicado@hotmail.com",
-        password: "123456",
-      }),
-    });
+    const lastEmail = await orchestrator.getLastEmail();
 
-    expect(response1.status).toBe(201);
+    const activationToken = await activation.findOneByUserId(
+      createdUserResponseBody.id,
+    );
 
-    const response2 = await fetch("http://localhost:3000/api/v1/users", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        username: "emailduplicado2",
-        email: "Duplicado@hotmail.com",
-        password: "123456",
-      }),
-    });
+    expect(lastEmail.sender).toBe("<contato@fintab.com.br>");
+    expect(lastEmail.recipients[0]).toBe("<registration.flow@curso.dev>");
+    expect(lastEmail.subject).toBe("Ative seu cadastro no FinTab!");
+    expect(lastEmail.text).toContain("RegistrationFlow");
+    expect(lastEmail.text).toContain(activationToken.id);
 
-    expect(response2.status).toBe(400);
-
-    const response2Body = await response2.json();
-
-    expect(response2Body).toEqual({
-      name: "ValidationError",
-      message: "O email informado já está sendo utilizado.",
-      action: "Utilize outro email para realizar esta operação.",
-      status_code: 400,
-    });
+    console.log(lastEmail.text);
   });
 
   test("Activate account", async () => {});
