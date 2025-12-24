@@ -66,6 +66,8 @@ describe("DELETE /api/v1/user", () => {
     test("With valid session", async () => {
       const createdUser = await orchestrator.createUser();
 
+      await orchestrator.activateUser(createdUser.id);
+
       const sessionObject = await orchestrator.createSession(createdUser.id);
 
       const response = await fetch(`http://localhost:3000/api/v1/sessions`, {
@@ -117,7 +119,7 @@ describe("DELETE /api/v1/user", () => {
         "http://localhost:3000/api/v1/user",
         {
           headers: {
-            Cookie: `Session_id=${sessionObject.token}`,
+            Cookie: `session_id=${sessionObject.token}`,
           },
         },
       );
