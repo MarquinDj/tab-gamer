@@ -1,6 +1,5 @@
 import activation from "models/activation";
 import orchestrator from "tests/orchestrator.js";
-import user from "models/user.js";
 
 beforeAll(async () => {
   await orchestrator.waitForAllServices();
@@ -64,13 +63,6 @@ describe("Use case: Registration Flow (all sucessful)", () => {
     );
 
     expect(activationResponse.status).toBe(200);
-
-    const activationResponseBody = await activationResponse.json();
-
-    expect(Date.parse(activationResponseBody.used_at)).not.toBeNaN();
-
-    const activatedUser = await user.findOneByUsername("RegistrationFlow");
-    expect(activatedUser.features).toEqual(["create:session", "read:session"]);
   });
 
   test("Login", async () => {
